@@ -28,10 +28,16 @@ function App() {
     setBurgerStack([addedIngredent, ...burgerStack])
   }
 
+  function clear(e) {
+    setBurgerStack([])
+  }
+
+  // let [clearBurger, setclearBurger] = useState([])
+
   return (
     <div>
       <IngredientList ingredient={ingredient} addIngredient={addIngredient}/>
-      <BurgerPane burgerStack={burgerStack} />
+      <BurgerPane burgerStack={burgerStack} clearBurger={clear}/>
      </div>
   )
 }

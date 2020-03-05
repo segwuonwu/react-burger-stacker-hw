@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function MyIngredients(props) {
     return (
@@ -9,6 +9,13 @@ function MyIngredients(props) {
                     </li>      
                 ))}
             </ul>
+            <div>
+                -----------------------------
+            </div>
+            <div>
+                Burger Stacking Area
+            </div>
+            
         </div>
     )
     
